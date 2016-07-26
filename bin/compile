@@ -12,6 +12,6 @@ if [ -d $CACHE_DIR/.m2 ] || [ -d $CACHE_DIR/node_modules ]; then
 else
   mkdir -p $CACHE_DIR
   echo -n "-----> Priming cache with JHipster dependencies... "
-  curl --retry 3 -s -L https://lang-jvm.s3.amazonaws.com/jhipster/cache-primer.tgz | tar xzm -C $CACHE_DIR
+  curl --retry 3 -s -L https://lang-jvm.s3.amazonaws.com/jhipster/cache-primer-monolith.tgz | tar xzm -C $CACHE_DIR
   echo "done"
 fi
